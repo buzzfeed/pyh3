@@ -7,7 +7,9 @@ except ImportError:
 
 setup(
     name='h3',
-    version='1.1',
+    version='1.0',
+    author='Songxiao Zhang, Adam Kelleher',
+    author_email='ee08b397@gmail.com, adam.kelleher@buzzfeed.com',
     packages=['h3'],
     install_requires=[
         'python-igraph==0.7',
