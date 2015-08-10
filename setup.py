@@ -10,6 +10,9 @@ setup(
     version='1.0',
     author='Songxiao Zhang, Adam Kelleher',
     author_email='ee08b397@gmail.com, adam.kelleher@buzzfeed.com',
+    description='Pure Python implementation of h3 for visualizing LARGE graphs',
+    long_description='Implements O(|V|) graph layout in hyperbolic space for visualizing very large ( > 1M nodes ) graphs.',
+    keywords='walrus h3 graph visualization graphviz dot graphml network rendering render layout hyperbolic',
     packages=['h3'],
     install_requires=[
         'python-igraph==0.7',
