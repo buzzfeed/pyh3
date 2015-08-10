@@ -47,9 +47,9 @@ python setup.py install
 Try it out on a simple graph!
 ```
 >>> import igraph
->>> from h3.tree import Tree, get_layout
+>>> from h3.tree import Tree
 >>> edges = igraph.Graph.Barabasi(n=500, m=3, directed=True).spanning_tree(None, True).get_edgelist()
->>> tree = get_layout(0, edges)
+>>> tree = Tree(edges)
 >>> tree.scatter_plot(equators=False, tagging=False)
 ```
 
