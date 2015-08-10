@@ -2,7 +2,7 @@
 
 h3py is an pure python implementation of [H3](https://graphics.stanford.edu/papers/munzner_thesis/) from Dr. Tamara Munzner's Ph.D. dissertation in Stanford University, June 2000. It provides a scalable, high performance and interactive graph visualization in 3D hyperbolic space. We found this algorithm is good at tracking and presenting massive amounts of posts sharing across different social networks over time. There's also a Java3D implementation called [Walrus](https://www.caida.org/tools/visualization/walrus/) by Center for Applied Internet Data Analysis (CAIDA), last release in 2005.
 
-The motivation behind this project was to build a Python version of H3 for visualizing data from the Pound project at Buzzfeed. Songxiao Zhang, working with Adam Kelleher of Buzzfeed's Optimization Squad successfully managed to implement this package, capable of laying out trees on the order of millions of nodes in a matter of minutes. 
+The motivation behind this project was to build a Python version of H3 for visualizing data from the Pound project at Buzzfeed. Songxiao Zhang, working with Adam Kelleher of Buzzfeed's Optimization Squad successfully managed to implement this package, capable of laying out trees on the order of millions of nodes in a matter of minutes. Andrew, Adam's brother, took care of minor cleanups packaging. 
 
 ## Quick View
 ```
@@ -77,4 +77,4 @@ Testbed: MacBook Pro (mid 2014)
   - 2.2GHz Intel Core i7
   - 16 GB 1600 MHz DDR3
 
-If you have any questions about the package please reach out to adam.kelleher@buzzfeed.com or andrew.kelleher@buzzfeed.com
+If you have any questions about the package or if you find a bug please write Song at ee08b397@gmail.com or Adam at adam.kelleher@buzzfeed.com or Andrew at andrew.kelleher@buzzfeed.com. 
