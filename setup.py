@@ -6,7 +6,7 @@ except ImportError:
   from setuptools import setup, find_packages
 
 setup(
-    name='h3',
+    name='pyh3',
     version='1.0',
     author='Songxiao Zhang, Adam Kelleher',
     author_email='ee08b397@gmail.com, adam.kelleher@buzzfeed.com',
@@ -16,5 +16,5 @@ setup(
         'numpy==1.9.2',
         'matplotlib==1.4.3',
     ],
-    url='http://www.github.com/buzzfeed/h3',
+    url='http://www.github.com/buzzfeed/pyh3',
 )
