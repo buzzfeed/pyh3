@@ -7,7 +7,7 @@ except ImportError:
 
 setup(
     name='pyh3',
-    version='1.0',
+    version='1.1',
     author='Songxiao Zhang, Adam Kelleher',
     author_email='ee08b397@gmail.com, adam.kelleher@buzzfeed.com',
     description='Pure Python implementation of h3 for visualizing LARGE graphs',

@@ -330,7 +330,7 @@ class Tree(object):
             current_generation = next_generation
 
 
-    def scatter_plot(self, equators=True, tagging=True, depth_cap=None):
+    def scatter_plot(self, equators=True, tagging=True, depth_cap=None, node_coloring=None):
         """
         Plot the tree with nodes and edges, optionally equators and tagging nodes with node numbers.
         The tree is traversed in a breath-first-search.
@@ -344,6 +344,7 @@ class Tree(object):
         :param bool equators: whether to draw the 3D equators, default True
         :param bool tagging: whether to tag nodes with node numbers, default True
         :param int depth_cap: a filter for rendering the first N generations, default tree height
+        :param dict node_coloring: an optional map from node_id : color, to color individual nodes
         """
         if depth_cap is None:
             depth_cap = self.height
@@ -377,7 +378,10 @@ class Tree(object):
                         xe = [self.nodes[n].coord.x, self.nodes[child.node_id].coord.x]
                         ye = [self.nodes[n].coord.y, self.nodes[child.node_id].coord.y]
                         ze = [self.nodes[n].coord.z, self.nodes[child.node_id].coord.z]
-                        ax.plot(xe, ye, ze, plot_color_board[self.nodes[n].depth % 5])
+                        if node_coloring:
+                            ax.plot(xe, ye, ze, node_coloring.get(n, 'black'))
+                        else:
+                            ax.plot(xe, ye, ze, plot_color_board[self.nodes[n].depth % 5])
             current_generation = next_generation
         ax.scatter(xs, ys, zs, c="r", marker="o")
         global_radius = self.nodes[self.root.node_id].radius * 1.12
