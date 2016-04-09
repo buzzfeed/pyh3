@@ -39,8 +39,8 @@ pip install h3py
 Or you can clone from github and install using setuptools:
 
 ```
-git clone git@github.com:buzzfeed/h3py.git ./h3py;
-cd h3py;
+git clone https://github.com/buzzfeed/pyh3 ./pyh3;
+cd pyh3;
 python setup.py install
 ```
 
