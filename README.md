@@ -1,6 +1,6 @@
-#h3py - H3 in Python 
+#pyh3 - H3 in Python 
 
-h3py is an pure python implementation of [H3](https://graphics.stanford.edu/papers/munzner_thesis/) from Dr. Tamara Munzner's Ph.D. dissertation in Stanford University, June 2000. It provides a scalable, high performance and interactive graph visualization in 3D hyperbolic space. We found this algorithm is good at tracking and presenting massive amounts of posts sharing across different social networks over time. There's also a Java3D implementation called [Walrus](https://www.caida.org/tools/visualization/walrus/) by Center for Applied Internet Data Analysis (CAIDA), last release in 2005.
+pyh3 is an pure python implementation of [H3](https://graphics.stanford.edu/papers/munzner_thesis/) from Dr. Tamara Munzner's Ph.D. dissertation in Stanford University, June 2000. It provides a scalable, high performance and interactive graph visualization in 3D hyperbolic space. We found this algorithm is good at tracking and presenting massive amounts of posts sharing across different social networks over time. There's also a Java3D implementation called [Walrus](https://www.caida.org/tools/visualization/walrus/) by Center for Applied Internet Data Analysis (CAIDA), last release in 2005.
 
 The motivation behind this project was to build a Python version of H3 for visualizing data from the Pound project at Buzzfeed. Songxiao Zhang, working with Adam Kelleher of Buzzfeed's Optimization Squad successfully managed to implement this package, capable of laying out trees on the order of millions of nodes in a matter of minutes. Andrew, Adam's brother, took care of minor cleanups packaging. 
 
@@ -33,14 +33,14 @@ The motivation behind this project was to build a Python version of H3 for visua
 You can install this via pip from the package index as 
 
 ```
-pip install h3py
+pip install pyh3
 ```
 
 Or you can clone from github and install using setuptools:
 
 ```
-git clone git@github.com:buzzfeed/h3py.git ./h3py;
-cd h3py;
+git clone git@github.com:buzzfeed/pyh3.git ./pyh3;
+cd pyh3;
 python setup.py install
 ```
 
@@ -55,7 +55,7 @@ Try it out on a simple graph!
 
 ## Results
 ![screenshot 2015-08-03 18 34 25](https://cloud.githubusercontent.com/assets/4334970/9049302/87de9d04-3a0e-11e5-91a5-06fb0baba28b.png)
-h3py in matplotlib with 50,000 nodes, takes like 30s to get the plot on my machine. This is a proof-of-the-concept that is very easy to get from python only. Frame rate is not good, e.g., 5s for a rotation, oh dear. 
+pyh3 in matplotlib with 50,000 nodes, takes like 30s to get the plot on my machine. This is a proof-of-the-concept that is very easy to get from python only. Frame rate is not good, e.g., 5s for a rotation, oh dear. 
 <br>
 
 ![screenshot 2015-08-06 15 32 29](https://cloud.githubusercontent.com/assets/4334970/9142031/19579a34-3d0b-11e5-8560-1320bfd47525.jpg)
