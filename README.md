@@ -77,4 +77,7 @@ Testbed: MacBook Pro (mid 2014)
   - 2.2GHz Intel Core i7
   - 16 GB 1600 MHz DDR3
 
+![log_cmp](https://cloud.githubusercontent.com/assets/4334970/17611401/e3d47084-6014-11e6-918d-535728ecea78.png)
+
+
 If you have any questions about the package or if you find a bug please write Song at ee08b397@gmail.com or Adam at adam.kelleher@buzzfeed.com or Andrew at andrew.kelleher@buzzfeed.com. 
