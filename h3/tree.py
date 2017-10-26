@@ -47,7 +47,7 @@ class Tree(object):
 
         edges = None # Release that memory.
 
-        for id, node in self.nodes.iteritems():
+        for id, node in self.nodes.items():
             if node.parent is None:
                 self.root = node
                 break
@@ -88,7 +88,7 @@ class Tree(object):
 
         :returns: A generator of all the leaf nodes in the Tree
         """
-        for node_id, node in self.nodes.iteritems():
+        for node_id, node in self.nodes.items():
             if not node.children:
                 yield node.node_id
 
@@ -227,7 +227,7 @@ class Tree(object):
                                    for child in self.nodes[node_id].children]
                 child_size_pair.sort(key=itemgetter(1), reverse=True)
                 if child_size_pair:
-                    self.nodes[node_id].children = list(zip(*child_size_pair)[0])
+                    self.nodes[node_id].children = list(zip(*child_size_pair))[0]
             depth += 1
             current_generation = next_generation
 
@@ -252,7 +252,7 @@ class Tree(object):
                                    for child in self.nodes[node_id].children]
                 child_size_pair.sort(key=itemgetter(1), reverse=True)
                 if child_size_pair:
-                    self.nodes[node_id].children = list(zip(*child_size_pair)[0])
+                    self.nodes[node_id].children = list(zip(*child_size_pair))[0]
             depth += 1
             current_generation = next_generation
 
