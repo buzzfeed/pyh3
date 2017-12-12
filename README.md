@@ -33,7 +33,7 @@ The motivation behind this project was to build a Python version of H3 for visua
 You can install this via pip from the package index as 
 
 ```
-pip install h3py
+pip install pyh3
 ```
 
 Or you can clone from github and install using setuptools:
