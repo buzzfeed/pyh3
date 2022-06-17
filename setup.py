@@ -16,7 +16,7 @@ setup(
     packages=['h3'],
     install_requires=[
         'python-igraph==0.7',
-        'numpy==1.9.2',
+        'numpy==1.21.0',
         'matplotlib==1.4.3',
     ],
     url='http://www.github.com/buzzfeed/pyh3',
